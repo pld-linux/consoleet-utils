@@ -1,22 +1,22 @@
 Summary:	Consoleet utilities
 Summary(pl.UTF-8):	Narzędzia Consoleet
 Name:		consoleet-utils
-Version:	1.9
+Version:	1.11
 Release:	1
 License:	GPL v3+
 Group:		Applications/Console
 Source0:	https://inai.de/files/consoleet/%{name}-%{version}.tar.zst
-# Source0-md5:	d8813ed9854c0868ab72775906ab087a
+# Source0-md5:	f5677f4288eeaf28543e2843c7626fa9
 URL:		https://inai.de/projects/consoleet/
 BuildRequires:	babl-devel >= 0.1
 BuildRequires:	eigen3 >= 3
-BuildRequires:	libHX-devel >= 4.15
-# -std=gnu++17
-BuildRequires:	libstdc++-devel >= 6:7
+BuildRequires:	libHX-devel >= 4.28
+# -std=gnu++20
+BuildRequires:	libstdc++-devel >= 6:8
 BuildRequires:	pkgconfig
 BuildRequires:	tar >= 1:1.31
 BuildRequires:	zstd
-Requires:	libHX >= 4.15
+Requires:	libHX >= 4.28
 Conflicts:	hxtools < 20221120
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
